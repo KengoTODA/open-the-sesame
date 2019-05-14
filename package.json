@@ -1,0 +1,12 @@
+{
+  "name": "open-the-sesame",
+  "version": "1.0.0",
+  "main": "pi.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "pigpio": "^1.2.2",
+    "pusher": "^2.2.0",
+    "pusher-client": "^1.1.0"
+  }
+}
