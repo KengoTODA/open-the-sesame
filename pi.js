@@ -1,11 +1,8 @@
 require('dotenv').config();
 const Gpio = require('pigpio').Gpio;
-const motor = new Gpio(10, {mode: Gpio.OUTPUT});
+const relay = new Gpio(17, {mode: Gpio.OUTPUT});
+relay.digitalWrite(0);
 
-function write(pulseWidth) {
-  motor.servoWrite(pulseWidth);
-  return Promise.resolve();
-}
 function wait(value) {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -29,14 +26,11 @@ channel.bind('my-event', async function(data) {
   working = true;
   try {
     console.log('start working...');
-    await write(SWITCH_ON);
-    await wait();
-    await write(SWITCH_OFF);
-    await wait();
+    relay.digitalWrite(1);
+    await wait(1000);
+    relay.digitalWrite(0);
   } finally {
     working = false;
     console.log('finished to work');
   }
 });
-
-write(SWITCH_OFF);
