@@ -6,3 +6,5 @@ A system that opens a door from out of home:
 2. In a Raspberry Pi 3, a service receives a message by [pusher.com](pusher.com)'s client API
 3. Use [pigpio](https://github.com/fivdi/pigpio) to control a relay
 4. Relay toggles the electric switch to open a door
+
+When you run `pi.js` on raspberry pi 3, run `yarn add pigpio` before command `sudo node pi.js`. 
