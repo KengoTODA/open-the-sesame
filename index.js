@@ -1,7 +1,10 @@
+require("dotenv").config();
+const signale = require("signale");
+signale.start("initializing app...");
+
 const express = require("express");
 const path = require("path");
 const Pusher = require("pusher");
-require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
 const pusher = new Pusher({
@@ -35,4 +38,4 @@ express()
       }
     );
   })
-  .listen(PORT, () => console.log(`Listening on ${PORT}`));
+  .listen(PORT, () => signale.success(`Listening on ${PORT}`));
