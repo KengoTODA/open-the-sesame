@@ -15,5 +15,15 @@
   "engines": {
     "node": "10.x"
   },
-  "author": "Kengo TODA"
+  "author": "Kengo TODA",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^2.4.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.0"
+  }
 }
