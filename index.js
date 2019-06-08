@@ -25,7 +25,7 @@ express()
         if (err) {
           res.status(500).send({
             result: "error",
-            err: JSON.stringify(err)
+            err
           });
         } else {
           res.status(200).send({
