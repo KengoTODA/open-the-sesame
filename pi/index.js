@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 require('dotenv').config();
 const Gpio = require('pigpio').Gpio;
 const relay = new Gpio(17, {mode: Gpio.OUTPUT});
