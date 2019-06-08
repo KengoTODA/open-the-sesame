@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 
 require("dotenv").config();
+const signale = require("signale");
+signale.config({
+  displayTimestamp: true,
+  displayDate: true
+});
+signale.start("initializing app...");
+
 const Gpio = require("pigpio").Gpio;
 const relay = new Gpio(17, { mode: Gpio.OUTPUT });
 relay.digitalWrite(0);
@@ -27,12 +34,13 @@ channel.bind("my-event", async function(data) {
 
   working = true;
   try {
-    console.log("start working...");
+    signale.start("received an event...");
     relay.digitalWrite(1);
     await wait(1000);
     relay.digitalWrite(0);
   } finally {
     working = false;
-    console.log("finished to work");
+    signale.complete("doors will be closed soon");
   }
 });
+signale.success("app has been initialized");

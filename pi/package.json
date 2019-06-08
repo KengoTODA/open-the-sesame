@@ -6,7 +6,8 @@
   "dependencies": {
     "dotenv": "^8.0.0",
     "pigpio": "^1.2.2",
-    "pusher-client": "^1.1.0"
+    "pusher-client": "^1.1.0",
+    "signale": "^1.4.0"
   },
   "keywords": [
     "raspberrypi"
