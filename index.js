@@ -15,11 +15,24 @@ const pusher = new Pusher({
 express()
   .use(express.static(path.join(__dirname, "public")))
   .post("/open", (req, res) => {
-    pusher.trigger("my-channel", "my-event", {
-      message: "Open the Sesame"
-    });
-    res.status(200).send({
-      result: "done"
-    });
+    pusher.trigger(
+      "my-channel",
+      "my-event",
+      {
+        message: "Open the Sesame"
+      },
+      err => {
+        if (err) {
+          res.status(500).send({
+            result: "error",
+            err: JSON.stringify(err)
+          });
+        } else {
+          res.status(200).send({
+            result: "done"
+          });
+        }
+      }
+    );
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
