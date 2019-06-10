@@ -1826,7 +1826,7 @@ html-minifier@^3.2.3:
     relateurl "0.2.x"
     uglify-js "3.4.x"
 
-html-webpack-inline-source-plugin@^0.0.10:
+html-webpack-inline-source-plugin@0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/html-webpack-inline-source-plugin/-/html-webpack-inline-source-plugin-0.0.10.tgz#89bd5f761e4f16902aa76a44476eb52831c9f7f0"
   integrity sha512-0ZNU57u7283vrXSF5a4VDnVOMWiSwypKIp1z/XfXWoVHLA1r3Xmyxx5+Lz+mnthz/UvxL1OAf41w5UIF68Jngw==
@@ -1835,7 +1835,7 @@ html-webpack-inline-source-plugin@^0.0.10:
     slash "^1.0.0"
     source-map-url "^0.4.0"
 
-html-webpack-plugin@^3.2.0:
+html-webpack-plugin@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
   integrity sha1-sBq71yOsqqeze2r0SS69oD2d03s=
@@ -4176,7 +4176,7 @@ watchpack@^1.5.0:
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
 
-webpack-cli@^3.3.3:
+webpack-cli@3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.3.3.tgz#8b7587dee369a838eb4722f6cfa711c779011e5f"
   integrity sha512-/qBxTvsxZ7bIFQtSa08QRY5BZuiJb27cbJM/nzmgXg9NEaudP20D7BruKKIuWfABqWoMEJQcNYYq/OxxSbPHlg==
@@ -4202,7 +4202,7 @@ webpack-sources@^1.3.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.33.0:
+webpack@4.33.0:
   version "4.33.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.33.0.tgz#c30fc4307db432e5c5e3333aaa7c16a15a3b277e"
   integrity sha512-ggWMb0B2QUuYso6FPZKUohOgfm+Z0sVFs8WwWuSH1IAvkWs428VDNmOlAxvHGTB9Dm/qOB/qtE5cRx5y01clxw==
