@@ -7,8 +7,6 @@ A system that opens a door from out of home:
 3. Use [pigpio](https://github.com/fivdi/pigpio) to control a relay
 4. Relay toggles the electric switch to open a door
 
-When you run `pi.js` on raspberry pi 3, run `yarn add pigpio` before command `sudo node pi.js`.
-
 ## How to run server on Heroku
 
 This repo has a necessary `Procfile` then simply push this repo to Heroku.
@@ -24,5 +22,5 @@ It will install and run the open-the-sesame daemon remotely.
 ## How to check log from client
 
 ```sh
-$ sudo journalctl --follow -u myapp
+$ sudo journalctl --follow -u open-the-sesame
 ```
