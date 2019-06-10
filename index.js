@@ -3,6 +3,7 @@ const signale = require("signale");
 signale.start("initializing app...");
 
 const express = require("express");
+const compression = require("compression");
 const path = require("path");
 const Pusher = require("pusher");
 
@@ -16,6 +17,7 @@ const pusher = new Pusher({
 });
 
 express()
+  .use(compression())
   .use(express.static(path.join(__dirname, "public")))
   .post("/open", (req, res) => {
     pusher.trigger(
