@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open the Sesame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
+    >
+  </head>
+  <body>
+    <form id="form" action="/open" method="POST">
+      <p>System is ready, please command your request:</p>
+      <div class="button-group">
+        <button class="large primary" type="submit">打开门</button>
+      </div>
+    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <textarea
+            disabled
+            id="console"
+            style="width:100%"
+            placeholder="Outout from system will be displayed"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
