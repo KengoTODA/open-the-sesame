@@ -8,4 +8,4 @@ CMD ["node", "index.js"]
 USER node
 
 # To run a server on docker, simply run the following command:
-# $ docker run -it --restart always -p 80:5000 $(docker build -q .)
+# $ docker run -d --restart always -p 80:5000 $(docker build -q .)
