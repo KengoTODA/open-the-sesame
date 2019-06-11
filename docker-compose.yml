@@ -1,0 +1,15 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+    environment:
+      - APP_DOMAIN=${APP_DOMAIN}
+  app:
+    build: .
+    expose:
+      - "5000"
