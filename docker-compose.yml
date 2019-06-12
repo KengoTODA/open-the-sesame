@@ -9,7 +9,7 @@ services:
       - app
     environment:
       - APP_DOMAIN=${APP_DOMAIN}
+    restart: always
   app:
     build: .
-    expose:
-      - "5000"
+    restart: always
