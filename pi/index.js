@@ -2,7 +2,10 @@
 
 require("dotenv").config();
 const Sentry = require("@sentry/node");
-Sentry.init({ dsn: process.env.SENTRY_DSN });
+Sentry.init({
+  dsn: process.env.SENTRY_DSN,
+  environment: "pi"
+});
 
 const signale = require("signale");
 signale.config({
