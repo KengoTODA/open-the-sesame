@@ -43,10 +43,20 @@ channel.bind("my-event", async function(data) {
     signale.start("received an event...");
     relay.digitalWrite(1);
     await wait(1000);
+    signale.complete("doors will be closed soon");
     relay.digitalWrite(0);
+  } catch (e) {
+    Sentry.captureException(e);
   } finally {
     working = false;
-    signale.complete("doors will be closed soon");
+  }
+});
+
+// https://pusher.com/docs/channels/using_channels/connection
+pusher.connection.bind("error", function(err) {
+  if (err.error.data.code === 4004) {
+    Sentry.captureException(err);
+    signale.console.error("detected limit error");
   }
 });
 signale.success("app has been initialized");
