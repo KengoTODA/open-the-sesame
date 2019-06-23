@@ -56,7 +56,7 @@ channel.bind("my-event", async function(data) {
 pusher.connection.bind("error", function(err) {
   if (err.error.data.code === 4004) {
     Sentry.captureException(err);
-    signale.console.error("detected limit error");
+    signale.error("detected limit error");
   }
 });
 signale.success("app has been initialized");
