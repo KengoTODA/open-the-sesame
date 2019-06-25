@@ -54,9 +54,6 @@ channel.bind("my-event", async function(data) {
 
 // https://pusher.com/docs/channels/using_channels/connection
 pusher.connection.bind("error", function(err) {
-  if (err.error.data.code === 4004) {
-    Sentry.captureException(err);
-    signale.error("detected limit error");
-  }
+  Sentry.captureException(err);
 });
 signale.success("app has been initialized");
