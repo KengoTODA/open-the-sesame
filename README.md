@@ -22,5 +22,5 @@ It will install and run the open-the-sesame daemon remotely.
 ## How to check log from client
 
 ```sh
-$ sudo journalctl --follow -u open-the-sesame
+$ sudo journalctl --follow -u open-the-sesame.service
 ```
