@@ -16,5 +16,5 @@ ssh pi:$SSH_PASSWORD@raspberrypi sudo mv $DIR_NAME/open-the-sesame.service /etc/
 
 ssh pi:$SSH_PASSWORD@raspberrypi yarn install
 ssh pi:$SSH_PASSWORD@raspberrypi sudo systemctl daemon-reload
-ssh pi:$SSH_PASSWORD@raspberrypi sudo systemctl enable open-the-sesame
-ssh pi:$SSH_PASSWORD@raspberrypi sudo systemctl start open-the-sesame
+ssh pi:$SSH_PASSWORD@raspberrypi sudo systemctl enable open-the-sesame.service
+ssh pi:$SSH_PASSWORD@raspberrypi sudo systemctl start open-the-sesame.service
