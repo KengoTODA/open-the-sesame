@@ -1,11 +1,15 @@
+# docker build --tag kengotoda/ots-app .
+
 FROM node:10-alpine
 EXPOSE 5000
 
-COPY . .
-RUN yarn install && yarn build
-CMD ["node", "index.js"]
+COPY ./package.json package.json
+COPY ./webpack.config.js webpack.config.js
+COPY ./yarn.lock yarn.lock
+RUN yarn
+COPY ./src src
+COPY index.js index.js
+RUN yarn build
 
 USER node
-
-# To run a server on docker, simply run the following command:
-# $ docker run -d --restart always -p 80:5000 $(docker build -q .)
+CMD ["node", "index.js"]

@@ -1,3 +1,5 @@
+# docker build --tag kengotoda/ots-nginx .
+
 FROM nginx:1.17
 EXPOSE 80
 ENV APP_DOMAIN=localhost
