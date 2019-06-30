@@ -9,7 +9,8 @@ services:
       - app
     environment:
       - APP_DOMAIN=${APP_DOMAIN}
-    restart: always
+    restart: unless-stopped
   app:
-    build: .
-    restart: always
+    build:
+      context: ./app
+    restart: unless-stopped
