@@ -1,6 +1,8 @@
 version: "3"
 services:
   nginx:
+    container_name: ots-nginx
+    image: kengotoda/ots-nginx
     build:
       context: ./nginx
     ports:
@@ -11,8 +13,20 @@ services:
       - ../.env
     restart: unless-stopped
   app:
+    container_name: ots-app
+    image: kengotoda/ots-app
     build:
       context: .
     env_file:
       - ../.env
     restart: unless-stopped
+  ouroboros:
+    container_name: ouroboros
+    hostname: ouroboros
+    image: pyouroboros/ouroboros
+    environment:
+      - CLEANUP=true
+      - SELF_UPDATE=true
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
