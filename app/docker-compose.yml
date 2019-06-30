@@ -7,10 +7,12 @@ services:
       - "80:80"
     depends_on:
       - app
-    environment:
-      - APP_DOMAIN=${APP_DOMAIN}
+    env_file:
+      - ../.env
     restart: unless-stopped
   app:
     build:
-      context: ./app
+      context: .
+    env_file:
+      - ../.env
     restart: unless-stopped
