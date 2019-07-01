@@ -30,6 +30,7 @@ express()
       },
       err => {
         if (err) {
+          signale.warn(err);
           res.status(500).send({
             result: "error",
             err
