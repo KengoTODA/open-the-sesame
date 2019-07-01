@@ -17,7 +17,7 @@ form.onsubmit = function(event) {
     if (status >= 200 && status < 300) {
       append("打开了！");
     } else {
-      const message = res.json().err;
+      const err = res.json().err;
       append("有个ERROR，不能打开：" + err);
     }
   });
