@@ -7,10 +7,6 @@ A system that opens a door from out of home:
 3. Use [pigpio](https://github.com/fivdi/pigpio) to control a relay
 4. Relay toggles the electric switch to open a door
 
-## How to run server on Heroku
-
-This repo has a necessary `Procfile` then simply push this repo to Heroku.
-
 ## How to run client on Raspberry Pi
 
 We use Raspberry Pi 3 Model B. You also need a relay that supports 3.3V input.
