@@ -3,18 +3,12 @@ Description=Open the sesame remotely
 After=network.target
 
 [Service]
-ExecStart=/home/pi/open-the-sesame/index.js
+ExecStart=/home/pi/open-the-sesame/pi/index.js
 Restart=always
 RestartSec=10
 
-# pigpio needs the root access
-User=root
-Group=root
-
-Environment=NODE_ENV=production
-WorkingDirectory=/home/pi/open-the-sesame
+Environment=NODE_ENV=production SENTRY_ENVIRONMENT=pi
+WorkingDirectory=/home/pi/open-the-sesame/pi/
 
 [Install]
 WantedBy=multi-user.target
-
-# refs https://certsimple.com/blog/deploy-node-on-linux
