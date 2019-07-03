@@ -33,3 +33,9 @@ APP_DOMAIN=example.com
 ```
 
 Make sure all values are NOT wrapped by double quarts; `docker-compose` does not remove double-quart during parsing even though `dotenv` module does.
+
+## How to check log
+
+```sh
+$ docker-compose logs
+```
