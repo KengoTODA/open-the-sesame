@@ -30,6 +30,9 @@ SENTRY_DSN=https://<key>@sentry.io/<project>
 
 # The domain to host this app
 APP_DOMAIN=example.com
+
+# The email address for certbot, see https://github.com/staticfloat/docker-nginx-certbot
+CERTBOT_EMAIL=admin@example.com
 ```
 
 Make sure all values are NOT wrapped by double quarts; `docker-compose` does not remove double-quart during parsing even though `dotenv` module does.
