@@ -1,20 +1,10 @@
 version: "3"
 services:
-  nginx:
-    container_name: ots-nginx
-    image: kengotoda/ots-nginx
-    build:
-      context: ./nginx
-    ports:
-      - "80:80"
-    depends_on:
-      - app
-    env_file:
-      - ../.env
-    restart: unless-stopped
   app:
     container_name: ots-app
     image: kengotoda/ots-app
+    ports:
+      - 5000:5000/tcp
     build:
       context: .
     env_file:

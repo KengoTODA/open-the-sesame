@@ -27,9 +27,6 @@ PUSHER_APP_SECRET=something-secret
 
 # Sentry DSN (Data Source Name) to submit log records
 SENTRY_DSN=https://<key>@sentry.io/<project>
-
-# The domain to host this app
-APP_DOMAIN=example.com
 ```
 
 Make sure all values are NOT wrapped by double quarts; `docker-compose` does not remove double-quart during parsing even though `dotenv` module does.
