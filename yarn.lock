@@ -3308,10 +3308,10 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pigpio@^1.2.2:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-1.2.3.tgz#b358f6b169293e14c0593303b8ab1c492373cd8e"
-  integrity sha512-3ySsqR2Dxvl8p/vY1MMwF6dVYXTNnK4uuGaYy7gQvQ65GIOtiqpU4N4Ylq1MoKJbfXY9SJbW2PLhkprzQks3dA==
+pigpio@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-2.0.0.tgz#984595605331b3132c79d1f05272f74a11395bd7"
+  integrity sha512-hgbvDrAmaXeHY97594mVjk4d6fmrcFs+ysTMFReZjn6py/OKPrncJIEsT3jHEYZHlU1buqaYpHkJvw3b0qQvWA==
   dependencies:
     bindings "^1.5.0"
     nan "^2.14.0"

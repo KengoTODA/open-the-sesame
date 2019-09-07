@@ -10,7 +10,7 @@
     "signale": "^1.4.0"
   },
   "optionalDependencies": {
-    "pigpio": "^1.2.2"
+    "pigpio": "^2.0.0"
   },
   "keywords": [
     "raspberrypi"
