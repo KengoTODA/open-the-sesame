@@ -3441,10 +3441,10 @@ pusher-client@^1.1.0:
     underscore "*"
     ws "*"
 
-pusher@^2.2.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/pusher/-/pusher-2.2.2.tgz#6665b7b0bc7eb82e39dd5903983c28ad85f70362"
-  integrity sha512-HQLhon2ZMhMQpWOJQ2NKa6JAYFxRS37oIFGKuA3q6lxF4Yf7k2oFkaZlkODSAVXTBkQ8JaFr53ocPlXy2nAp2g==
+pusher@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pusher/-/pusher-3.0.0.tgz#710be1c534b0d834978d3abb2f27146b87adaf0c"
+  integrity sha512-r7oKdjs+BbUijyWE2MBUzsdLh7cG8HRJhHqLyPRTchV6JjLwKaRVHKAc0k4lGNuWflEqk2S31ph0VQnBoGDi8g==
   dependencies:
     "@types/request" "^2.47.1"
     request "2.88.0"
