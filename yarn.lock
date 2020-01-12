@@ -3301,10 +3301,10 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pigpio@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-2.0.0.tgz#984595605331b3132c79d1f05272f74a11395bd7"
-  integrity sha512-hgbvDrAmaXeHY97594mVjk4d6fmrcFs+ysTMFReZjn6py/OKPrncJIEsT3jHEYZHlU1buqaYpHkJvw3b0qQvWA==
+pigpio@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-3.0.0.tgz#4eefca98d839ba43395970b4937de21e369af4c0"
+  integrity sha512-zrin+4KpSTupodUpTAJdWPf9BFLH1T2asXhvbf0/QUjWMO2s9csn0H9LqtlajCCmeNZagkeR648NN1dXj1BkHw==
   dependencies:
     bindings "^1.5.0"
     nan "^2.14.0"
